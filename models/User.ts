@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 export interface UserFields {
-  _id:string;
+ _id: string;
   name: string;
   email: string;
   password: string;
@@ -13,11 +13,7 @@ export interface UserFields {
 }
 
 const userSchema = new mongoose.Schema(
-  { _id: {
-    type: String,
-    required: true,
-    trim: true,
-  },
+  { 
     name: {
       type: String,
       required: true,
